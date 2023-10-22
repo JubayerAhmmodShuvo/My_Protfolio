@@ -43,14 +43,23 @@ export const educationData = [
     description:
       "In the year 2022, I proudly graduated from Daffodil International University, marking a significant milestone in my academic journey. The experience and knowledge gained during my time at the university have greatly enriched my understanding of my field and equipped me with valuable skills that I'm eager to apply in my professional career. This accomplishment represents not only years of hard work and dedication but also the beginning of an exciting new chapter in my life, filled with opportunities for growth and continued learning.",
     icon: React.createElement(LuGraduationCap),
-   
+
     location: "Dhaka, Bangladesh",
     date: "2018 - 2022",
     result: "3.55",
-    school:"Daffodil International University",
+    school: "Daffodil International University",
   },
+  {
+    title: "Higher Secondary School Certificate",
+    description:
+      "Completed my Higher Secondary School Certificate from Brahmanbaria Govt. College in Brahmanbaria, Bangladesh, from 2014 to 2016, achieving a remarkable result of 5.00. This experience provided a strong academic foundation for my future pursuits.",
+    icon: React.createElement(LuGraduationCap),
 
- 
+    location: "Brahmanbaria, Bangladesh",
+    date: "2014 - 2016",
+    result: "5.00",
+    school: "Brahmanbaria Govt. College",
+  },
 ] as const;
 
 
@@ -76,8 +85,8 @@ export const projectsData = [
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
     liveUrl: "https://www.google.com/",
-    github_Front: "",
-    github_Back:"",
+    github_Front: "https://www.google.com/",
+    github_Back: "https://www.google.com/",
   },
   {
     title: "rmtDev",
@@ -85,6 +94,9 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
+    liveUrl: "https://www.google.com/",
+    github_Front: "https://www.google.com/",
+    github_Back: "https://www.google.com/",
   },
   {
     title: "Word Analytics",
@@ -92,8 +104,11 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    liveUrl: "https://www.google.com/",
+    github_Front: "https://www.google.com/",
+    github_Back: "https://www.google.com/",
   },
-] ;
+] as const ;
 
 export const skillsData = [
   "HTML",
