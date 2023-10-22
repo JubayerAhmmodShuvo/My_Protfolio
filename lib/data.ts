@@ -75,6 +75,9 @@ export const projectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
+    liveUrl: "https://www.google.com/",
+    github_Front: "",
+    github_Back:"",
   },
   {
     title: "rmtDev",
@@ -90,7 +93,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
-] as const;
+] ;
 
 export const skillsData = [
   "HTML",

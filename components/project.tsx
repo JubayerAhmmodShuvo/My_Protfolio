@@ -13,6 +13,9 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  liveUrl,
+  github_Back,
+  github_Front,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -47,6 +50,57 @@ export default function Project({
               </li>
             ))}
           </ul>
+
+          <div className="flex flex-row ">
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" inline-flex items-center justify-center mt-4 mr-2 text-center w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
+              style={{
+                fontSize: "0.7rem",
+                textTransform: "uppercase",
+                letterSpacing: "0.1rem",
+                borderRadius: "999px",
+                textDecoration: "none",
+                cursor: "pointer",
+              }}
+            >
+              Live_Link
+            </a>
+            <a
+              href={github_Front}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 text-center  w-24 bg-black/[0.7] mr-2 px-3 py-2 text-white hover:text-red-300"
+              style={{
+                fontSize: "0.6rem",
+                textTransform: "uppercase",
+                letterSpacing: "0.1rem",
+                borderRadius: "999px",
+                textDecoration: "none",
+                cursor: "pointer",
+              }}
+            >
+              GitHub Front_End
+            </a>
+            <a
+              href={github_Back}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 text-center  w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
+              style={{
+                fontSize: "0.7rem",
+                textTransform: "uppercase",
+                letterSpacing: "0.1rem",
+                borderRadius: "999px",
+                textDecoration: "none",
+                cursor: "pointer",
+              }}
+            >
+              GitHub Back_End
+            </a>
+          </div>
         </div>
 
         <Image
