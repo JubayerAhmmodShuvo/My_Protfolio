@@ -46,11 +46,11 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-bold !mt-3">{item.school}</p>
-              <p className="font-bold !mt-3">{item.result}</p>
+              <p className="font-bold !mt-2">{item.result}</p>
+              <p className="font-semibold !mt-1">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
-              <p className="font-semibold !mt-2">{item.location}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

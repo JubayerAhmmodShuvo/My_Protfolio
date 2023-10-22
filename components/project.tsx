@@ -58,7 +58,7 @@ export default function Project({
               rel="noopener noreferrer"
               className=" inline-flex items-center justify-center mt-4 mr-2 text-center w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
               style={{
-                fontSize: "0.7rem",
+                fontSize: "0.6rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.1rem",
                 borderRadius: "999px",
@@ -72,7 +72,7 @@ export default function Project({
               href={github_Front}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 text-center  w-24 bg-black/[0.7] mr-2 px-3 py-2 text-white hover:text-red-300"
+              className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] mr-2 px-3 py-2 text-white hover:text-red-300"
               style={{
                 fontSize: "0.6rem",
                 textTransform: "uppercase",
@@ -82,15 +82,15 @@ export default function Project({
                 cursor: "pointer",
               }}
             >
-              GitHub Front_End
+              Front_End
             </a>
             <a
               href={github_Back}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 text-center  w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
+              className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
               style={{
-                fontSize: "0.7rem",
+                fontSize: "0.6rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.1rem",
                 borderRadius: "999px",
@@ -98,7 +98,7 @@ export default function Project({
                 cursor: "pointer",
               }}
             >
-              GitHub Back_End
+              Back_End
             </a>
           </div>
         </div>
