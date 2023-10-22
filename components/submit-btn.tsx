@@ -15,8 +15,8 @@
 //         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
 //       ) : (
 //         <>
-//           Submit{" "}
-//           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+//           Submit
+//           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
 //         </>
 //       )}
 //     </button>
@@ -29,13 +29,10 @@ export default function SubmitBtn() {
   const [pending, setPending] = useState(false);
 
   const handleSubmit = async () => {
-
     setPending(true);
 
- 
-    await new Promise((resolve) => setTimeout(resolve, 2000)); 
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  
     setPending(false);
   };
 
@@ -50,8 +47,8 @@ export default function SubmitBtn() {
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
       ) : (
         <>
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+          Submit
+          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
         </>
       )}
     </button>
