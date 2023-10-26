@@ -81,7 +81,7 @@ export const projectsData = [
   {
     title: "Budget Car",
     description:
-      "Budget Car Service - Full-stack web app streamlines car servicing with role-based user management, JWT security, order creation, payments, and admin controls. Technologies: Next.js, Express.js, MongoDB, Vercel, Ant Design, TypeScript.",
+      "Budget Car Service - Full-stack web app streamlines car servicing with role-based user management, JWT security, order creation, payments, and admin controls.",
     tags: ["Next.js", "MongoDB", "Ant Design", "Prisma", "Express.js"],
     imageUrl: corpcommentImg,
     liveUrl: "https://budget-service.vercel.app/home",
@@ -91,7 +91,7 @@ export const projectsData = [
   {
     title: "Squirrel Tools",
     description:
-      "Squirrel Tools - Full-stack web app differentiates admin and user roles, utilizing Google and GitHub logins, JWT validation, Stripe payments, and secure to-do lists. Technologies: React.js, Node.js, Express.js, Firebase, MongoDB, Stripe, React-Hooks, DaisyUi, Tailwind.",
+      "Squirrel Tools - Full-stack web app differentiates admin and user roles, utilizing Google and GitHub logins, JWT validation, Stripe payments, and secure to-do lists.",
     tags: [
       "React",
       "MongoDB",
@@ -109,7 +109,7 @@ export const projectsData = [
   {
     title: "My TO-DO",
     description:
-      "Todo_App: Secure to-do list web app. Log in with Google, use JWT tokens for data safety. Effortlessly manage tasks in MongoDB. Delete and mark tasks as completed.",
+      "Secure to-do list web app. Log in with Google, use JWT tokens for data safety. Effortlessly manage tasks in MongoDB.",
     tags: ["React", "MongoDB", "Express.js", "Tailwind", "Firebase"],
     imageUrl: wordanalyticsImg,
     liveUrl: "https://todo-app-c8f85.web.app/login",
