@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import corpcommentImg from "@/public/budget.png";
+import rmtdevImg from "@/public/tools.png";
+import wordanalyticsImg from "@/public/todo.png";
 
 export const links = [
   {
@@ -79,36 +79,44 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Budget Car",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Budget Car Service - Full-stack web app streamlines car servicing with role-based user management, JWT security, order creation, payments, and admin controls. Technologies: Next.js, Express.js, MongoDB, Vercel, Ant Design, TypeScript.",
+    tags: ["Next.js", "MongoDB", "Ant Design", "Prisma", "Express.js"],
     imageUrl: corpcommentImg,
-    liveUrl: "https://www.google.com/",
-    github_Front: "https://www.google.com/",
-    github_Back: "https://www.google.com/",
+    liveUrl: "https://budget-service.vercel.app/home",
+    github_Front: "https://github.com/JubayerAhmmodShuvo/Car_Service_Front-End",
+    github_Back: "https://github.com/JubayerAhmmodShuvo/car-service-backend",
   },
   {
-    title: "rmtDev",
+    title: "Squirrel Tools",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Squirrel Tools - Full-stack web app differentiates admin and user roles, utilizing Google and GitHub logins, JWT validation, Stripe payments, and secure to-do lists. Technologies: React.js, Node.js, Express.js, Firebase, MongoDB, Stripe, React-Hooks, DaisyUi, Tailwind.",
+    tags: [
+      "React",
+      "MongoDB",
+      "Express.js",
+      "Tailwind",
+      "Firebase",
+      "Stripe",
+      "React-Hooks",
+    ],
     imageUrl: rmtdevImg,
-    liveUrl: "https://www.google.com/",
-    github_Front: "https://www.google.com/",
-    github_Back: "https://www.google.com/",
+    liveUrl: "https://tools-manufacturer-4bdef.web.app/",
+    github_Front: "https://github.com/JubayerAhmmodShuvo/ToolsHouse_ClientSide",
+    github_Back: "https://github.com/JubayerAhmmodShuvo/ToolsHouse_ServerSide",
   },
   {
-    title: "Word Analytics",
+    title: "My TO-DO",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Todo_App: Secure to-do list web app. Log in with Google, use JWT tokens for data safety. Effortlessly manage tasks in MongoDB. Delete and mark tasks as completed.",
+    tags: ["React", "MongoDB", "Express.js", "Tailwind", "Firebase"],
     imageUrl: wordanalyticsImg,
-    liveUrl: "https://www.google.com/",
-    github_Front: "https://www.google.com/",
-    github_Back: "https://www.google.com/",
+    liveUrl: "https://todo-app-c8f85.web.app/login",
+    github_Front: "https://github.com/JubayerAhmmodShuvo/TODO_Client",
+    github_Back: "https://github.com/JubayerAhmmodShuvo/TODO_Server",
   },
-] as const ;
+] as const; ;
 
 export const skillsData = [
   "HTML",
