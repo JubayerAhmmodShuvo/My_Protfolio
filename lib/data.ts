@@ -82,7 +82,7 @@ export const projectsData = [
     title: "Budget Car",
     description:
       "Budget Car Service - Full-stack web app streamlines car servicing with role-based user management, JWT security, order creation, payments, and admin controls.",
-    tags: ["Next.js", "MongoDB", "Ant Design", "Prisma", "Express.js"],
+    tags: ["Next.js", "MongoDB", "Ant Design", "TypeScript", "Express.js"],
     imageUrl: corpcommentImg,
     liveUrl: "https://budget-service.vercel.app/home",
     github_Front: "https://github.com/JubayerAhmmodShuvo/Car_Service_Front-End",

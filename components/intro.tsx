@@ -67,7 +67,7 @@ export default function Intro() {
         <span className="font-bold">full-stack developer</span> with &nbsp;
         <span className="font-bold">1 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is
-        &nbsp;
+        &nbsp; <br />
         <span className="underline">Full-Stack Development</span>.
       </motion.h1>
 
