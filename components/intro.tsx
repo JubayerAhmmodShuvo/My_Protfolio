@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://drive.google.com/uc?id=1zaXyfTJ1s1qRtDgZ_pImbWj422LMJ_mi"
+              src="https://res.cloudinary.com/dznko9wjf/image/upload/v1699873499/00_kpbbr1.png"
               alt="Shuvo portrait"
               width="220"
               height="220"
@@ -119,3 +119,6 @@ export default function Intro() {
     </section>
   );
 }
+
+
+// https://res.cloudinary.com/dznko9wjf/image/upload/v1701164791/My_photo_mjtcb6.jpg
