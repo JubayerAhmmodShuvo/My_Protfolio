@@ -159,4 +159,55 @@ export const skillsData = [
 
 ] as const;
 
+export const allProjectsData = [
+  {
+    title: "Budget Car",
+    description:
+      "Budget Car Service - Full-stack web app streamlines car servicing with role-based user management, JWT security, order creation, payments, and admin controls.",
+    tags: ["Next.js", "MongoDB", "Ant Design", "TypeScript", "Express.js"],
+    imageUrl: corpcommentImg,
+    liveUrl: "https://budget-service.vercel.app/home",
+    github_Front: "https://github.com/JubayerAhmmodShuvo/Car_Service_Front-End",
+    github_Back: "https://github.com/JubayerAhmmodShuvo/car-service-backend",
+  },
+  {
+    title: "Shoe House",
+    description:
+      "Users register securely with hashed passwords in MongoDB for robust data protection, accessing the platform via JWT authentication. Integration with Stripe ensures a trusted and smooth payment experience, prioritizing user data security.",
+    tags: [
+      "Next.js",
+      "MongoDB",
+      "Express.js",
+      "Tailwind",
+      "TypeScript",
+      "Stripe",
+      "Redux",
+      "React-Hooks Form",
+    ],
+    imageUrl: rmtdevImg,
+    liveUrl: "https://shoehouse-frontend.vercel.app/home",
+    github_Front: "https://github.com/JubayerAhmmodShuvo/ShowHouse_Frontend",
+    github_Back: "https://github.com/JubayerAhmmodShuvo/ShowHouse_Backend",
+  },
+  {
+    title: "Task Manager",
+    description:
+      "Users register securely, log in to manage tasks effortlessly with categories (pending, ongoing, completed), and initiate tasks with a &quot;Start&quot; button for streamlined organization and easy navigation through pagination",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "Express.js",
+      "Tailwind",
+      "JWT",
+      "React Toastify",
+    ],
+    imageUrl: wordanalyticsImg,
+    liveUrl: "https://taskmanagement-six.vercel.app/home",
+    github_Front: "https://github.com/JubayerAhmmodShuvo/Task_Manager_FrontEnd",
+    github_Back:
+      "https://github.com/JubayerAhmmodShuvo/Task_Management_Backend",
+  },
+] as const; ;
+
 

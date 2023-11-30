@@ -2,7 +2,7 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { projectsData } from "@/lib/data";
+import { allProjectsData, projectsData } from "@/lib/data";
 
 import { useSectionInView } from "@/lib/hooks";
 import AllProject from "./allproject";
@@ -25,7 +25,7 @@ export default function AllProjects() {
       </div>
       <section ref={ref} id="projects" className="scroll-mt-28 mb-28 mt-10 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4   mt-24">
-          {projectsData.map((project, index) => (
+          {allProjectsData.map((project, index) => (
             <React.Fragment key={index}>
               <AllProject {...project} />
             </React.Fragment>
