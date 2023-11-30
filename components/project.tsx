@@ -5,6 +5,8 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React from "react";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -26,88 +28,89 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
-      }}
-      className="group mb-3 sm:mb-8 last:mb-0"
-    >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative  hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
+    <>
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scaleProgess,
+          opacity: opacityProgess,
+        }}
+        className="group mb-3 sm:mb-8 last:mb-0"
+      >
+        <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative  hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+            <h3 className="text-2xl font-semibold">{title}</h3>
+            <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+              {description}
+            </p>
+            <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+              {tags.map((tag, index) => (
+                <li
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex flex-row ">
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" inline-flex items-center justify-center mt-4 mr-2 text-center w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
+                style={{
+                  fontSize: "0.6rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1rem",
+                  borderRadius: "999px",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                }}
               >
-                {tag}
-              </li>
-            ))}
-          </ul>
-
-          <div className="flex flex-row ">
-            <a
-              href={liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" inline-flex items-center justify-center mt-4 mr-2 text-center w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
-              style={{
-                fontSize: "0.6rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.1rem",
-                borderRadius: "999px",
-                textDecoration: "none",
-                cursor: "pointer",
-              }}
-            >
-              Live_Link
-            </a>
-            <a
-              href={github_Front}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] mr-2 px-3 py-2 text-white hover:text-red-300"
-              style={{
-                fontSize: "0.6rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.1rem",
-                borderRadius: "999px",
-                textDecoration: "none",
-                cursor: "pointer",
-              }}
-            >
-              Front_End
-            </a>
-            <a
-              href={github_Back}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
-              style={{
-                fontSize: "0.6rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.1rem",
-                borderRadius: "999px",
-                textDecoration: "none",
-                cursor: "pointer",
-              }}
-            >
-              Back_End
-            </a>
+                Live_Link
+              </a>
+              <a
+                href={github_Front}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] mr-2 px-3 py-2 text-white hover:text-red-300"
+                style={{
+                  fontSize: "0.6rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1rem",
+                  borderRadius: "999px",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                }}
+              >
+                Front_End
+              </a>
+              <a
+                href={github_Back}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
+                style={{
+                  fontSize: "0.6rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1rem",
+                  borderRadius: "999px",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                }}
+              >
+                Back_End
+              </a>
+            </div>
           </div>
-        </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
@@ -119,8 +122,19 @@ export default function Project({
         group-even:group-hover:rotate-2
 
         group-even:right-[initial] group-even:-left-40"
-        />
-      </section>
-    </motion.div>
+          />
+        </section>
+      </motion.div>
+      <div className="flex justify-center items-center">
+        {" "}
+        <Link
+          href="/allproject"
+          className="group bg-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-center w-72 "
+        >
+          All Project
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+        </Link>
+      </div>
+    </>
   );
 }
