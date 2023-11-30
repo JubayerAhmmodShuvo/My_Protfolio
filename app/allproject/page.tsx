@@ -1,9 +1,10 @@
+import AllProjects from '@/components/allprojects';
 import React from 'react';
 
 const page = () => {
   return (
-    <div className='h-96' >
-      <h1>Hello</h1>
+    <div className="mx-auto !mt-0 ">
+      <AllProjects />
     </div>
   );
 };
