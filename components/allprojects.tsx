@@ -1,9 +1,6 @@
 "use client";
-
 import React from "react";
-import SectionHeading from "./section-heading";
-import { allProjectsData, projectsData } from "@/lib/data";
-
+import { allProjectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import AllProject from "./allproject";
 import Link from "next/link";
