@@ -72,7 +72,7 @@ export const experiencesData = [
     description:
       "I served as a front-end developer for a period of 4 months in this role. During this time, my responsibilities included crafting engaging and interactive user interfaces using React.js, developing reusable components, and ensuring the upkeep of clean and efficient code. Additionally, I undertook the valuable endeavor of broadening my skill set to encompass full-stack development."
     ,icon: React.createElement(CgWorkAlt),
-    date: "2022",
+    date: "2022 - 2023",
   },
  
 ] as const;

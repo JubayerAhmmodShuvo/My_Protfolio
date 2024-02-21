@@ -65,7 +65,7 @@ export default function Intro() {
         <p className="	font-style: italic  font-bold">Hello</p>
         <span className="font-bold"> I'm Jubayer Ahmmod.</span> I'm a &nbsp;
         <span className="font-bold">full-stack developer</span> with &nbsp;
-        <span className="font-bold">1 years</span> of experience. I enjoy
+        <span className="font-bold">3 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is
         &nbsp; <br />
         <span className="underline">Full-Stack Development</span>.
