@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { allProjectsData } from "@/lib/data";
+import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import AllProject from "./allproject";
 import Link from "next/link";
@@ -22,7 +22,7 @@ export default function AllProjects() {
       </div>
       <section ref={ref} id="projects" className="scroll-mt-28 mb-28 mt-10 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4   mt-24">
-          {allProjectsData.map((project, index) => (
+          {projectsData.map((project, index) => (
             <React.Fragment key={index}>
               <AllProject {...project} />
             </React.Fragment>
