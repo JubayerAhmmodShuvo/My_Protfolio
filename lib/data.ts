@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/budget.png";
 import rmtdevImg from "@/public/tools.png";
 import wordanalyticsImg from "@/public/todo.png";
+import fyntixImg from "@/public/fyntix.com.png";
+import tradinganycarImg from "@/public/tradinganycar.com.png";
 
 export const links = [
   {
@@ -91,6 +93,27 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    
+  {
+    title: "Fyntix",
+    description:
+      "Here we create marketing strategies and solution for your business. We are a team of experienced marketers and developers who are dedicated to helping you grow your business.",
+    tags: ["Next.js", "MongoDB", "Tailwind", "TypeScript", "Express.js"],
+    imageUrl: fyntixImg,
+    liveUrl: "https://fyntix.com",
+    
+  },
+    
+  {
+    title: "Trading Any Car",
+    description:
+      "A comprehensive full-stack web application designed to facilitate seamless car trading experiences. It incorporates role-based user management, ensuring secure transactions through JWT authentication, efficient order creation and payment processing, as well as robust admin controls.",
+    tags: ["Next.js", "MongoDB", "Tailwind", "TypeScript", "Express.js"],
+    imageUrl: tradinganycarImg,
+    liveUrl: "https://tradinganycar.com",
+
+  },
+
   {
     title: "Budget Car",
     description:
