@@ -7,8 +7,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import type { Project } from "@/lib/types";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = Project;
 
 export default function Project({
   title,
@@ -71,38 +72,42 @@ export default function Project({
               >
                 Live_Link
               </a>
-              <a
-                href={github_Front}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] mr-2 px-3 py-2 text-white hover:text-red-300"
-                style={{
-                  fontSize: "0.6rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1rem",
-                  borderRadius: "999px",
-                  textDecoration: "none",
-                  cursor: "pointer",
-                }}
-              >
-                Front_End
-              </a>
-              <a
-                href={github_Back}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
-                style={{
-                  fontSize: "0.6rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1rem",
-                  borderRadius: "999px",
-                  textDecoration: "none",
-                  cursor: "pointer",
-                }}
-              >
-                Back_End
-              </a>
+              {github_Front && (
+                <a
+                  href={github_Front}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] mr-2 px-3 py-2 text-white hover:text-red-300"
+                  style={{
+                    fontSize: "0.6rem",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.1rem",
+                    borderRadius: "999px",
+                    textDecoration: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  Front_End
+                </a>
+              )}
+              {github_Back && (
+                <a
+                  href={github_Back}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-center inline-flex items-center justify-center   w-24 bg-black/[0.7] px-3 py-2 text-white hover:text-red-300"
+                  style={{
+                    fontSize: "0.6rem",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.1rem",
+                    borderRadius: "999px",
+                    textDecoration: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  Back_End
+                </a>
+              )}
             </div>
           </div>
 
