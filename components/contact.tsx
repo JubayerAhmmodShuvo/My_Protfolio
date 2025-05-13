@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -10,6 +10,8 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   return (
     <motion.section
@@ -44,17 +46,28 @@ export default function Contact() {
       </p>
 
       <form
+        ref={formRef}
         className="mt-10 flex flex-col dark:text-black"
         onSubmit={async (event: React.FormEvent<HTMLFormElement>) => {
           event.preventDefault();
+          setIsSubmitting(true);
 
-          const formData = new FormData(event.currentTarget);
-
-          const { data, error } = await sendEmail(formData);
-          if (error) {
-            toast.error(error);
-          } else {
+          try {
+            const formData = new FormData(event.currentTarget);
+            const { data, error } = await sendEmail(formData);
+            
+            if (error) {
+              toast.error(error);
+              return;
+            }
+            
             toast.success("Email sent successfully!");
+            formRef.current?.reset();
+          } catch (error) {
+            toast.error("Something went wrong. Please try again later.");
+            console.error("Error sending email:", error);
+          } finally {
+            setIsSubmitting(false);
           }
         }}
       >
@@ -65,6 +78,7 @@ export default function Contact() {
           required
           maxLength={500}
           placeholder="Your email"
+          disabled={isSubmitting}
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -72,10 +86,10 @@ export default function Contact() {
           placeholder="Your message"
           required
           maxLength={5000}
+          disabled={isSubmitting}
         />
-        <SubmitBtn />
+        <SubmitBtn isSubmitting={isSubmitting} />
       </form>
-
     </motion.section>
   );
 }

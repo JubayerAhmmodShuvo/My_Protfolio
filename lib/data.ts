@@ -64,7 +64,20 @@ export const educationData = [
 
 
 export const experiencesData = [
- 
+    {
+    title: "Software Engineer",
+    company: "Fyntix",
+    location: "Canada (Remote)",
+    description: "Unlocking Innovation: As a software engineer for 1.3 years, I contributed to the development of cutting-edge software solutions, honing my skills in collaboration, problem-solving, and technical expertise.",
+    date: "2024 - 2025",
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Trading Any Car",
+    location: "Dhaka, Bangladesh",
+    description: "Worked as a full stack developer for 1.4 years, focusing on the design, development, and deployment of scalable and efficient applications, utilizing a range of technologies to deliver high-quality products.",
+    date: "2024 - 2025",
+  },
   {
     title: "Javascript Engineer",
     company:"Root Force Marketer",

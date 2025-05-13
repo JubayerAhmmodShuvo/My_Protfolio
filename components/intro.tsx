@@ -65,8 +65,8 @@ export default function Intro() {
         <p className="	font-style: italic  font-bold">Hello</p>
         <span className="font-bold"> I'm Jubayer Ahmmod.</span> I'm a &nbsp;
         <span className="font-bold">full-stack developer</span> with &nbsp;
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is
+        <span className="font-bold">3.5 years</span> of experience. I enjoy
+        building <span className="italic">websites & apps</span>. My focus is
         &nbsp; <br />
         <span className="underline">Full-Stack Development</span>.
       </motion.h1>
@@ -102,7 +102,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/JubayerAhmmodShuvo"
+          href="https://www.linkedin.com/in/jubayerahmmodshuvo/"
           target="_blank"
         >
           <BsLinkedin />
@@ -110,7 +110,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/jubayerahmmodshuvo/"
+          href="https://github.com/JubayerAhmmodShuvo"
           target="_blank"
         >
           <FaGithubSquare />
