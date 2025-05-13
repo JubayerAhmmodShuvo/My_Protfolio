@@ -7,8 +7,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import type { Project } from "@/lib/types";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = Project;
 
 export default function AllProject({
   title,
